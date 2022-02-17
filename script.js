@@ -72,7 +72,7 @@ door3.onclick = () => {
     }
 }
 
-const startRound = () => {
+startButton.onclick = () => {
     startRound();
 }
 
