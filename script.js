@@ -24,3 +24,11 @@ const isClicked = (door) => {
     return false;
 }
 
+const playDoor = (door) => {
+    numCloosedDoors--;
+    if (numCloosedDoors === 0) {
+        gameOver('win');
+    } else if (isBot(door)) {
+        gameOver();
+    }
+}
