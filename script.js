@@ -2,10 +2,10 @@ let door1 = document.getElementById('door1');
 let door2 = document.getElementById('door2');
 let door3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
-let botDoorPath = './resources/images/robot.svg';
-let beachDoorPath = './resources/images/beach.svg';
-let spaceDoorPath = './resources/images/space.svg';
-let closedDoorPath = './resources/images/closed_door.svg';
+let botDoorPath = "./resources/images/robot.svg";
+let beachDoorPath = "./resources/images/beach.svg";
+let spaceDoorPath = "./resources/images/space.svg";
+let closedDoorPath = "./resources/images/closed_door.svg";
 let numCloosedDoors = 3;
 let openDoor1, openDoor2, openDoor3;
 let currentlyPlaying = true;
@@ -13,15 +13,17 @@ let currentlyPlaying = true;
 const isBot = (door) => {
     if (door.src === botDoorPath) {
         return true;
+    } else {
+        return false;
     }
-    return false;
 }
 
 const isClicked = (door) => {
     if (door.src === closedDoorPath) {
         return false;
+    } else {
+        return true;
     }
-    return true;
 }
 
 const playDoor = (door) => {
