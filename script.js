@@ -76,3 +76,7 @@ doorImage3.onclick = () => {
         }
     }
 }
+
+const startRound = () => {
+    startRound();
+}
