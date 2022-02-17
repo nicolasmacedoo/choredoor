@@ -43,10 +43,10 @@ const randomChoreDoorGenerator = () => {
         openDoor2 = botDoorPath;
         openDoor1 = spaceDoorPath;
         openDoor3 = beachDoorPath;
-    } else if (choreDoor === 2) {
+    } else  {
         openDoor3 = botDoorPath;
         openDoor1 = beachDoorPath;
-        openDoor3 = spaceDoorPath;
+        openDoor2 = spaceDoorPath;
     }
 }
 
