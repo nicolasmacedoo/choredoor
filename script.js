@@ -21,7 +21,7 @@ const isClicked = (door) => {
     if (door.src === closedDoorPath) {
         return false;
     }
-    return false;
+    return true;
 }
 
 const playDoor = (door) => {
