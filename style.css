@@ -40,3 +40,14 @@ body {
     font-size: 16px;
     color: #fff;
 }
+
+.door-row {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.door-frame {
+    cursor: pointer;
+    padding: 15px;
+    padding-bottom: 90px;
+}
