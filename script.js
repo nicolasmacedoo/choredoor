@@ -49,3 +49,30 @@ const randomChoreDoorGenerator = () => {
         openDoor3 = spaceDoorPath;
     }
 }
+
+doorImage1.onclick = () => {
+    if (!currentlyPlaying) {
+        if (currentlyPlaying && !isClicked(doorImage1)) {
+            doorImage1.src = openDoor1;
+            playDoor(doorImage1);
+        }
+    }
+}
+
+doorImage2.onclick = () => {
+    if (!currentlyPlaying) {
+        if (currentlyPlaying && !isClicked(doorImage2)) {
+            doorImage2.src = openDoor2;
+            playDoor(doorImage2);
+        }
+    }
+}
+
+doorImage3.onclick = () => {
+    if (!currentlyPlaying) {
+        if (currentlyPlaying && !isClicked(doorImage3)) {
+            doorImage3.src = openDoor3;
+            playDoor(doorImage3);
+        }
+    }
+}
