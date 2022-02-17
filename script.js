@@ -32,3 +32,20 @@ const playDoor = (door) => {
         gameOver();
     }
 }
+
+const randomChoreDoorGenerator = () => {
+    let choreDoor = Math.floor(Math.random() * numCloosedDoors);
+    if (choreDoor === 0) {
+        openDoor1 = botDoorPath;
+        openDoor2 = beachDoorPath;
+        openDoor3 = spaceDoorPath;
+    } else if (choreDoor === 1) {
+        openDoor2 = botDoorPath;
+        openDoor1 = spaceDoorPath;
+        openDoor3 = beachDoorPath;
+    } else if (choreDoor === 2) {
+        openDoor3 = botDoorPath;
+        openDoor1 = beachDoorPath;
+        openDoor3 = spaceDoorPath;
+    }
+}
