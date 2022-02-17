@@ -77,9 +77,9 @@ startButton.onclick = () => {
 }
 
 const startRound = () => {
-    doorImage1.src = closedDoorPath;
-    doorImage2.src = closedDoorPath;
-    doorImage3.src = closedDoorPath;
+    door1.src = closedDoorPath;
+    door2.src = closedDoorPath;
+    door3.src = closedDoorPath;
     numCloosedDoors = 3;
     startButton.innerHTML = 'Good Luck!';
     currentlyPlaying = true;
