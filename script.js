@@ -6,3 +6,7 @@ const botDoorPath = './resources/images/robot.svg';
 const beachDoorPath = './resources/images/beach.svg';
 const spaceDoorPath = './resources/images/space.svg';
 const closedDoorPath = './resources/images/closed_door.svg';
+let numCloosedDoors = 3;
+let openDoor1, openDoor2, openDoor3;
+let currentlyPlaying = true;
+
