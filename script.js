@@ -10,3 +10,9 @@ let numCloosedDoors = 3;
 let openDoor1, openDoor2, openDoor3;
 let currentlyPlaying = true;
 
+const isBot = (door) => {
+    if (door.src === botDoorPath) {
+        return true;
+    }
+    return false;
+}
