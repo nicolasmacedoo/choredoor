@@ -50,30 +50,25 @@ const randomChoreDoorGenerator = () => {
     }
 }
 
-doorImage1.onclick = () => {
-    if (!currentlyPlaying) {
-        if (currentlyPlaying && !isClicked(doorImage1)) {
-            doorImage1.src = openDoor1;
-            playDoor(doorImage1);
-        }
+door1.onclick = () => {
+    if (currentlyPlaying && !isClicked(door1)) {
+        door1.src = openDoor1;
+        playDoor(door1);
+        
     }
 }
 
-doorImage2.onclick = () => {
-    if (!currentlyPlaying) {
-        if (currentlyPlaying && !isClicked(doorImage2)) {
-            doorImage2.src = openDoor2;
-            playDoor(doorImage2);
-        }
+door2.onclick = () => {
+    if (currentlyPlaying && !isClicked(door2)) {
+        door2.src = openDoor2;
+        playDoor(door2);
     }
 }
 
-doorImage3.onclick = () => {
-    if (!currentlyPlaying) {
-        if (currentlyPlaying && !isClicked(doorImage3)) {
-            doorImage3.src = openDoor3;
-            playDoor(doorImage3);
-        }
+door3.onclick = () => {
+    if (currentlyPlaying && !isClicked(door3)) {
+        door3.src = openDoor3;
+        playDoor(door3);
     }
 }
 
