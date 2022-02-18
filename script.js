@@ -31,7 +31,7 @@ const playDoor = (door) => {
     if (numCloosedDoors === 0) {
         gameOver('win');
     } else if (isBot(door)) {
-        gameOver();
+        gameOver('lose');
     }
 }
 
