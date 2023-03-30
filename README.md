@@ -14,4 +14,4 @@ The goal is to open all of the doors without running into ChoreBot. If you manag
  
  - Desktop version
  
-![](./resource/images/screenshot.png)
+![](./resources/images/screenshot.png)
