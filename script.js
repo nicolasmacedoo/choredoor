@@ -90,18 +90,20 @@ door3.onclick = () => {
     door3.src = botDoorPath
 }
 
+startButton.onclick = () => {
+    if (currentlyPlaying === false) {
+        startRound();
+    }
+}
+
 const startRound = () => {
     door1.src = closedDoorPath;
     door2.src = closedDoorPath;
     door3.src = closedDoorPath;
     numCloosedDoors = 3;
-    startButton.innerHTML = 'Good Luck!';
     currentlyPlaying = true;
+    startButton.innerHTML = 'Good Luck!';
     randomChoreDoorGenerator();
-}
-
-startButton.onclick = () => {
-    startRound();
 }
 
 startRound();
